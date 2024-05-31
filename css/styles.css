@@ -1,3 +1,35 @@
 /**************************
 	* STYLES
 **************************/
+.navbar {
+    /* Layout Properties */
+    position: absolute;
+    top: 23px;
+    left: 138px;
+    width: 70%;
+    height: 180px;
+    /* UI Properties */
+    color: #FFFFFF; 
+	font: normal normal bold 16px/19px Montserrat;
+    padding: 0 20px; 
+}
+
+.navdiv{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+}
+
+li a{
+	color: white;
+	margin-right: 25px;
+}
