@@ -33,3 +33,12 @@ li a{
 	color: white;
 	margin-right: 25px;
 }
+footer{
+	padding: 20px 0;
+	background-color: rgba(0, 62, 82, 1);
+	text-align: center;
+};
+footer img {
+    display: inline-block;
+    max-width: 100%;
+}
