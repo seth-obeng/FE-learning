@@ -366,7 +366,7 @@ body {
     .slider {
         margin: 0;
         position: relative;
-        height: 100vh; /* Ensure it covers the full height of the viewport */
+        height: 69vh; /* Ensure it covers the full height of the viewport */
     }
 
     .slider-dash {
@@ -375,7 +375,7 @@ body {
 
     .slick-slide img {
     
-        height: 100vh; /* Ensure it covers the full height of the slider */
+        height: 70vh; /* Ensure it covers the full height of the slider */
         object-fit: cover; /* Ensure the image covers the entire area */
     }
 
