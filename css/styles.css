@@ -22,12 +22,10 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    /* padding: 0 var(--spacing); */
-}
 
 /* Styles for desktop view */
 @media screen and (min-width: 768px) {
+    
     .navbar {
         padding: 0 138px;;
         position: relative;
@@ -190,7 +188,14 @@ body {
         color: var(--primary-color);
         opacity: 1;
     }
-
+    .icon-item:hover{
+        border-radius: 30px;
+        border:1px solid var(--primary-color);
+        background-color: ashgray;
+        color:orange;
+        cursor:pointer;
+        box-shadow: 0px 0px 5px 2px #cfc8c8;
+    }
     .icon-item img {
         max-width: 100%;
         height: auto;
@@ -242,8 +247,11 @@ body {
     .icon-item{
         width: 50%;
     }  ;
-    
+    .slider-dash{
+        width:25px;
+    }
 }
+
 
 /* Styles for mobile view */
 @media screen and (max-width: 767px) {
