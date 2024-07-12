@@ -9,10 +9,10 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<button type="button" class="slick-prev">&lt;</button>',
-    nextArrow: '<button type="button" class="slick-next">&gt;</button>',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
     customPaging: function(slider, i) {
-      return '<button class="slider-dash">' + i + '</button>'; // Customize the dots as underscores
+      return '<button class="slider-dash"></button>'; // Customize the dots as underscores
     }
   });
 });
