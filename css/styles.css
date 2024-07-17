@@ -18,16 +18,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font-primary);
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     overflow-x: hidden;
 }
 
 
-/* Styles for desktop view */
-@media screen and (min-width: 768px) {
+/* Styles for desktop view 
+@media screen and (min-width: 768px) {*/
     
     .navbar {
-        padding: 0 138px;;
+        padding: 0 138px;
         position: relative;
         z-index: 1;
         top: 23px;
@@ -41,7 +41,9 @@ body {
         justify-content: space-between;
         /* padding: 0 var(--spacing); */
     }
-
+.hamburger{
+    display: none;
+}
     ul {
         display: flex;
         align-items: center;
@@ -64,10 +66,7 @@ body {
         font-weight: bold;
     }
 
-    button {
-      /*  display: none;*/
-    }
-
+   
     .slider {
         top: -55px;
         margin: 0;
@@ -102,6 +101,7 @@ body {
 
     .slick-slide img {
         width: 100%;
+        max-width: 100%;
     }
     .slick-dots li button:before {
         top:-30px;
@@ -190,7 +190,7 @@ body {
     }
     .icon-item:hover{
         border-radius: 30px;
-        border:1px solid var(--primary-color);
+        border:0px solid var(--primary-color);
         background-color: ashgray;
         color:orange;
         cursor:pointer;
@@ -212,7 +212,7 @@ body {
                 color:var(--white);
                 position: absolute;
                 top:90%;
-                left: 79%;
+                right: 10.5%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -222,7 +222,7 @@ body {
             .slider-dash{
                 margin-left: 1px;
             }
-}
+
 .dashes-container {
     display: flex;
     align-items: center;
@@ -233,15 +233,15 @@ body {
 .slider-dash {
     width: 40px;
     height: 2px;
-    background-color: rgb(83, 79, 71) !important;
+    background-color: rgb(83, 79, 71);
     margin: 0 5px;
     transition: background-color 0.3s;
     border: none;
 }
-
 .slick-active .slider-dash {
-    background-color: white !important;
+    background-color: var(--white);
 }
+
 /*meduim screens*/
 @media   (max-width:950px){
     .icon-item{
@@ -256,19 +256,22 @@ body {
 /* Styles for mobile view */
 @media screen and (max-width: 767px) {
     .slick-prev{
-        right:35px !important;
-        left:auto !important;
+     
+       left: 80%;  
     }
     .slick-next {
-        right: 10px;
+       left: 90%;
     }
+  
     .slick-prev, .slick-next {
-        top:95% !important;
+        top:95% ;
     }
     .navbar {
         background-color: var(--primary-color);
         position: relative;
         z-index: 1001; /* Ensure navbar is on top */
+        padding: 12px;
+        top:0px;
     }
 
     .navdiv {
@@ -385,12 +388,13 @@ body {
     
         height: 70vh; /* Ensure it covers the full height of the slider */
         object-fit: cover; /* Ensure the image covers the entire area */
+        width:100%;
     }
 
     .slide-content {
         position: absolute;
         top: 40vh;
-        left: 30%;
+        left: 60%;
         transform: translate(-50%, -50%);
         width: 90%; /* Ensure it fits within the viewport */
         max-width: 272px; /* Optional: limit the maximum width */
@@ -405,7 +409,7 @@ body {
     }
 
     .cta-button {
-        display: inline-block;
+        text-align: center;
         margin-top: var(--spacing);
         color: var(--primary-color);
         background-color: var(--white);
@@ -460,7 +464,7 @@ body {
 
 /* Styles for footer */
 footer {
-    margin: 0;
+    margin-top: 12px;
     background-color: var(--primary-color);
     padding: 20px 0;
     text-align: center;
